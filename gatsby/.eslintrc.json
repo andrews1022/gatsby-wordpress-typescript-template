@@ -1,0 +1,49 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["plugin:react/recommended", "airbnb"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "@typescript-eslint"],
+	"rules": {
+		"arrow-body-style": "warn",
+		"comma-dangle": "off",
+		"import/extensions": "off",
+		"import/newline-after-import": "warn",
+		"import/no-unresolved": "off",
+		"import/no-useless-path-segments": "warn",
+		"import/order": "warn",
+		"import/prefer-default-export": "warn",
+		"indent": "off",
+		"jsx-quotes": "off",
+		"linebreak-style": "off",
+		"no-mixed-spaces-and-tabs": "warn",
+		"no-tabs": "off",
+		"no-trailing-spaces": "warn",
+		"no-undef": "warn",
+		"no-unused-vars": "warn",
+		"no-use-before-define": "off",
+		"object-curly-newline": "off",
+		"object-curly-spacing": "warn",
+		"object-shorthand": "warn",
+		"quotes": "off",
+		"react/jsx-closing-bracket-location": "warn",
+		"react/jsx-closing-tag-location": "warn",
+		"react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+		"react/jsx-indent": "off",
+		"react/jsx-indent-props": "off",
+		"react/jsx-one-expression-per-line": "off",
+		"react/prop-types": "off",
+		"react/require-default-props": "off",
+		"react/self-closing-comp": "warn",
+		"@typescript-eslint/no-use-before-define": ["error"]
+	}
+}
