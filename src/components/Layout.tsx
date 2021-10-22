@@ -1,10 +1,14 @@
-import * as React from 'react';
+import React from 'react';
 import { WindowLocation } from '@reach/router';
+import { ThemeProvider } from 'styled-components';
 
-import Header from './Header';
+// components
 import Footer from './Footer';
+import Nav from './Nav';
 
-import GlobalStyle from '../styled-components/GlobalStyle';
+// styles
+import GlobalStyle from '../styles/GlobalStyle';
+import theme from '../styles/theme';
 
 interface LayoutProps {
 	location: WindowLocation;
@@ -20,10 +24,12 @@ const Layout = ({ location, title, children }: LayoutProps) => {
 
 	return (
 		<div className='global-wrapper' data-is-root-path={isRootPath}>
-			<GlobalStyle />
-			<Header isRootPath={isRootPath} title={title} />
-			<main>{children}</main>
-			<Footer />
+			<ThemeProvider theme={theme}>
+				<GlobalStyle />
+				<Nav />
+				<main>{children}</main>
+				<Footer />
+			</ThemeProvider>
 		</div>
 	);
 };

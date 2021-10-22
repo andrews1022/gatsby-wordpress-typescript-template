@@ -66,12 +66,12 @@ export default {
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-gatsby-cloud`,
 		`gatsby-plugin-styled-components`,
-		// {
-		// 	resolve: `gatsby-source-wordpress`,
-		// 	options: {
-		// 		url: `http://cakeit.local/graphql`
-		// 	}
-		// },
+		{
+			resolve: `gatsby-source-wordpress`,
+			options: {
+				url: `http://gatsby-wordpress-typescript-template.local/graphql`
+			}
+		},
 		{
 			resolve: `gatsby-plugin-typescript`,
 			options: {

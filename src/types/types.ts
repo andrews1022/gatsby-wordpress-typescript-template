@@ -1,5 +1,5 @@
 export type Site = {
-  siteMetadata: {
-    title: string;
-  };
+	siteMetadata: {
+		title: string;
+	};
 };

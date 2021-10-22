@@ -1,15 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 import { Link, graphql, PageProps } from 'gatsby';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
-import '../css/style.css';
-import '../css/normalize.css';
-
 import { Site } from '../types/types';
-
-import { BlogPostTitle, Author } from '../styled-components/Styles';
 
 // import Heading from '../components/Heading';
 
@@ -44,9 +39,9 @@ const BlogIndex = ({ data, location }: PageProps<GraphQLResult>) => {
 
 	return (
 		<Layout location={location} title='Home'>
-			<Seo title='All posts' />
+			<Seo title='Home' />
 
-			<h1>Hello!</h1>
+			<h1>Hello from the Home page!</h1>
 		</Layout>
 	);
 };
